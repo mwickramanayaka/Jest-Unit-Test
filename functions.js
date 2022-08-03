@@ -4,7 +4,12 @@ const functions = {
     //     return num1 + num2;
     // }
     isNull: () => null,
-    checkValue: (x) => x
-}
+    checkValue: (x) => x,
+    createUser: () => {
+        const user = { firstName: 'Brad' };
+        user['lastName'] = 'Pitt';
+        return user;
+    }
+};
 
 module.exports = functions;
