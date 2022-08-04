@@ -37,6 +37,12 @@ test('should be under 1600', () => {
 
 //RegEx
 test('There is no H in manul', () => {
-//    expect('manul').not.toMatch(/H/);//case insensitive
-    expect('manul').not.toMatch(/H/h);//case sensitive
+    expect('manul').not.toMatch(/L/);//case insensitive
+//    expect('manul').not.toMatch(/L/l);//case sensitive
+});
+
+//Arrays
+test('Admin should be in usernames', () => {
+    usernames = ['john', 'kiren', 'james'];
+    expect(usernames).toContain('james');//case sensitive
 });
